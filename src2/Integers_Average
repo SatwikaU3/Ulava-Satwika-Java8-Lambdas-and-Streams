@@ -1,0 +1,16 @@
+import java.util.OptionalDouble;
+import java.util.stream.IntStream; 
+public class Integers_Average {
+	public static void main(String[] args) 
+     {
+        IntStream st = IntStream.of(2, 3, 3, 4, 6, 7, 8); 
+        OptionalDouble ob = st.average(); 
+         if (ob.isPresent()) { 
+            System.out.println(ob.getAsDouble()); 
+        } 
+       else { 
+            System.out.println("-1"); 
+        } 
+     } 
+
+}
