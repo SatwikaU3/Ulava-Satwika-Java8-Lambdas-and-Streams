@@ -1,0 +1,25 @@
+import java.util.ArrayList;
+import java.util.List;
+import java.util.stream.*;
+public class Strings_all {
+	public static List<String> search(List<String> list) {
+		   return list
+				.stream()
+				.filter(s -> s.startsWith("a") && s.length()==3)
+				.collect(Collectors.toList());
+	}
+	
+	 public static void main(String args[]) {
+		
+		List<String> x1 = new ArrayList<String>();
+		 x1.add("abc"); 
+	        x1.add("aaa"); 
+	        x1.add("bbb");
+	        x1.add("abcd");
+	        List<String> s = search(x1); 
+	   System.out.println(s);
+		 
+            
+		
+	}
+}
